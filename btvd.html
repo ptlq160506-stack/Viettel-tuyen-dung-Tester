@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viettel Careers – Tuyển dụng Tester Hà Nội</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: #fff;
+      padding: 14px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 26px;
+      white-space: nowrap;
+    }
+
+    nav ul li a {
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 500;
+      color: #000;
+      display: inline-block;
+      transition: all 0.25s ease;
+    }
+
+    nav ul li a:hover {
+      background: #d71920;
+      color: #fff;
+      transform: translateY(-4px);
+    }
+
+    /* ===== BUTTON CHUNG ===== */
+    .btn {
+      display: inline-block;
+      background: #d71920;
+      color: #fff;
+      padding: 12px 26px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.35s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ===== HIỆU ỨNG NÚT CHÍNH (CTA) ===== */
+    .btn-cta {
+      background: linear-gradient(120deg, #d71920, #ff4b4b);
+      background-size: 200%;
+    }
+
+    .btn-cta:hover {
+      background-position: right;
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(215,25,32,0.4);
+    }
+
+    /* Hover riêng cho nút ỨNG TUYỂN HEADER */
+    .btn-apply:hover {
+      background: #e0e0e0;
+      color: #000;
+      transform: translateY(-2px);
+    }
+    /* Nút quay lại */
+    .btn-back {
+    background: #e53935;
+    text-decoration: none
+    }
+    /* ===== HERO ===== */
+    .hero {
+      background: #fff;
+      padding: 60px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    /* ===== JOB ===== */
+    .jobs {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: all 0.35s ease;
+    }
+
+    .job-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    /* ===== CULTURE ===== */
+    .culture {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .culture .card:hover {
+      transform: translateY(-6px);
+    }
+
+    /* ===== APPLY ===== */
+    .apply {
+      background: #d71920;
+      color: #fff;
+      text-align: center;
+
+    }
+
+    .apply .btn {
+      background: #fff;
+      color: #d71920;
+    }
+
+    .apply .btn:hover {
+      background: #f2f2f2;
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-grid,
+      .culture {
+        grid-template-columns: 1fr;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <img src="https://tuyendung.viettel.vn/share/images/market/viettel/Logo_viettel.png" height="36" />
+        <strong style="color:#d71920; font-size:18px;">TUYỂN DỤNG</strong>
+      </div>
+
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Về chúng tôi</a></li>
+        <li><a href="#jobs">Tuyển dụng</a></li>
+        <li><a href="#">Đãi ngộ</a></li>
+        <li><a href="#">Sự kiện</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+
+      <div>
+        <a href="formdktd.html" class="btn btn-apply">ỨNG TUYỂN</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Kiến tạo tương lai số cùng Viettel</h1>
+      <p>
+        Gia nhập Tập đoàn Công nghiệp – Viễn thông Quân đội,
+        nơi bạn được làm việc với công nghệ lõi và dự án quy mô quốc gia.
+      </p>
+      <!-- HIỆU ỨNG -->
+      <a href="#jobs" class="btn btn-cta">Xem vị trí tuyển dụng</a>
+    </div>
+    <div>
+      <img
+        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+        alt="Viettel Careers"
+        style="width:100%; border-radius:12px;"
+      />
+    </div>
+  </div>
+</section>
+
+<section id="jobs">
+  <div class="container">
+    <h2>Vị trí đang tuyển</h2>
+    <div class="jobs">
+      <div class="card job-card">
+        <h3>Tester (QA/QC)</h3>
+        <p><strong>Chi nhánh:</strong> Hà Nội</p>
+        <p>
+          Tham gia kiểm thử phần mềm, đảm bảo chất lượng sản phẩm
+          công nghệ lõi của Viettel.
+        </p>
+        <a href="in4vitrituyendung.html" class="btn btn-cta">Xem thông tin</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="apply" class="apply">
+  <div class="container">
+    <h2>Sẵn sàng gia nhập Viettel?</h2>
+    <p>Hãy nộp CV của bạn để bắt đầu hành trình sự nghiệp bền vững.</p>
+    <!-- HIỆU ỨNG -->
+    <a href="formdktd.html" class="btn btn-cta">Nộp hồ sơ ngay</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Viettel Group – Website tuyển dụng (bản mô phỏng - BTN môn QTNL - NEU)</p>
+</footer>
+
+</body>
+</html>

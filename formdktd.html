@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng tuyển vị trí Tester</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            padding: 20px;
+        }
+        .form-container {
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #d71920;
+        }
+        label {
+            display: block;
+            margin: 10px 0 6px;
+            font-weight: 600;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background: #d71920;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 16px;   
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+        } 
+
+        .btn:hover {
+            background: #ff4b4b;
+            transform: translateY(-3px) scale(1.02);
+        }
+        .btn-back {
+            background: #d71920;
+        }
+        .btn-back:hover {
+            background: #ff4b4b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Ứng tuyển vị trí Tester (QA/QC)</h2>
+
+    <form action="camon.html" method="post">
+
+        <label for="fullname">Họ và tên</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email" required>
+
+        <label for="phone">Số điện thoại</label>
+        <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+
+        <label for="experience">Kinh nghiệm làm việc</label>
+        <select id="experience" name="experience" required>
+            <option value="">Chọn...</option>
+            <option value="none">Chưa có kinh nghiệm</option>
+            <option value="junior">0-1 năm</option>
+            <option value="intermediate">1-3 năm</option>
+            <option value="senior">Trên 3 năm</option>
+        </select>
+
+        <label for="cv">Gửi link CV</label>
+        <textarea id="cv" name="cv" rows="4" placeholder="Link Drive/OneDrive hoặc mô tả kinh nghiệm" required></textarea>
+
+        <div class="form-actions">
+            <a href="btvd.html" class="btn btn-back">Quay lại trang tuyển dụng</a>
+            <button type="submit" class="btn">Gửi đơn ứng tuyển</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
